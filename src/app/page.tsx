@@ -40,7 +40,7 @@ export default function Portfolio() {
       <section id="about" className="py-20 text-center">
         <h2 className="text-3xl font-bold mb-8">About Me</h2>
         <p className="max-w-xl mx-auto text-gray-600">
-          I'm Marium Umair, a passionate web developer dedicated to creating engaging and user-friendly digital experiences. 
+          I am Marium Umair, a passionate web developer dedicated to creating engaging and user-friendly digital experiences. 
           I specialize in technologies such as HTML, CSS, JavaScript, React, and Next.js.
         </p>
       </section>
