@@ -2,26 +2,213 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Custom Global Styles */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #71c1f7; /* Soft background */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  color: #f7f6f6;
+  font-size: x-large;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.btn {
+  background-color: #0b3d66;
+  padding: 12px 24px;
+  border-radius: 50px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #072e4e; /* Darker blue on hover */
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+
+a {
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ff7f50; /* Orange color on hover */
+}
+
+
+#about {
+  padding: 80px 0;
+  background: linear-gradient(45deg, #098bc7, #043d6b); /* Gradient background */
+  color: white;
+  text-align: center;
+}
+
+#about p {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #f7fafc;
+  padding: 80px 0;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+.project-card p {
+  color: #666;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.project-card a {
+  background-color: #3490dc;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-top: 15px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.project-card a:hover {
+  background-color: #2779bd;
+}
+
+#skills {
+  background-color: #f0f4f8;
+  padding: 80px 0;
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.skill-tag {
+  background-color: #ff7f50; /* Orange background for skills */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.skill-tag:hover {
+  background-color: #f57c00;
+  transform: translateY(-5px);
+}
+
+
+#contact {
+  background-color: #3490dc;
+  padding: 80px 0;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 40px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#contact form button {
+  background-color: #ff7f50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+  background-color: #f57c00;
+}
+
+.footer {
+  background-color: #0a043d;
+  font-size: larger;
+  color: #f7f9fa;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer a {
+  color: #f7f9fa; 
+  text-decoration: underline;
+  padding: 40px;
 }
